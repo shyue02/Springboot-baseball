@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="site.metacoding.red.domain.expulsion.ExpulsionDao">
+
+	<insert id="insert ">
+		INSERT INTO expulsion(name, uniformnumber, POSITION, reson,
+		createDate)
+		VALUES(#{name}, #{uniformnumber}, #{POSITION}, #{reson} now())
+	</insert>
+
+	<select id="findAll"
+		resultType="site.metacoding.red.domain.expulsion.Expulsion">
+		SELECT * FROM expulsion ORDER BY id DESC
+	</select>
+
+	<select id="findById"
+		resultType="site.metacoding.red.domain.expulsion.Expulsion">
+		SELECT * FROM expulsion WHERE id = #{id}
+	</select>
+	
+	<insert id="update">
+		UPDATE expulsion SET name = #{name},uniformnumber = #{uniformnumber}, POSITION =
+		#{POSITION}, reson =	#{reson}
+		WHERE id = #{id}
+	</insert>
+
+	<insert id="deleteById">
+		DELETE FROM expulsion WHERE id = #{id}
+	</insert>
+
+
+</mapper>

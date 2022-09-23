@@ -15,13 +15,5 @@ public class Player {
 	private Integer uniformnumber;
 	private String POSITION;
 	private Timestamp createDate;
-
-	
-	public void update(PlayerDto updateDto) {
-		this.playername=updateDto.getPlayername();
-		this.teamname=updateDto.getTeamname();
-		this.uniformnumber=updateDto.getUniformnumber();
-		this.POSITION=updateDto.getPOSITION();
-	}
 		
 }

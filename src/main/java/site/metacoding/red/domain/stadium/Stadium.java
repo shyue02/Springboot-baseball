@@ -16,10 +16,5 @@ public class Stadium {
 	private String area;
 	private Date build;
 	private Timestamp createDate;
-	
-	public Stadium(String stadiumnaString, String area, Date build ){
-		this.stadiumname = stadiumnaString;
-		this.area = area;
-		this.build =build;
-	}
+
 }

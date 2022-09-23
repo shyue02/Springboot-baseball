@@ -8,6 +8,4 @@ public interface PlayerDao {
 	public Player findById(Integer id);
 	public void update(Player player);
 	public void deleteById(Player player);
-	
-
 }	
