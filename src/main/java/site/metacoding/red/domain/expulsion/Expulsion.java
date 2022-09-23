@@ -14,4 +14,13 @@ public class Expulsion {
 	private String POSITION;
 	private String reson;
 	private Timestamp createDate;
+	
+	public Expulsion(String name, Integer uniformnumber, String pOSITION, String reson) {
+		this.name = name;
+		this.uniformnumber = uniformnumber;
+		this.POSITION = pOSITION;
+		this.reson = reson;
+	}
+	
+	
 }

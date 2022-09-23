@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import lombok.RequiredArgsConstructor;
 import site.metacoding.red.service.PlayerService;
-import site.metacoding.red.web.dto.request.player.RegisterDto;
+import site.metacoding.red.web.dto.request.player.PlayRegisterDto;
 
 
 @RequiredArgsConstructor
@@ -15,9 +15,9 @@ public class PlayerController {
 
 	private final PlayerService playerService;
 	
-	@PostMapping("/register")
-	public String register(RegisterDto registerDto) {
-		playerService.선수등록(registerDto);
+	@PostMapping("/playregister")
+	public String playregister(PlayRegisterDto playRegisterDto) {
+		playerService.선수등록(playRegisterDto);
 		return "선수등록완료";
 	}
 	

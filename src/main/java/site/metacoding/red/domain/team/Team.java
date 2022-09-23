@@ -16,4 +16,13 @@ public class Team {
 	private String t_area;
 	private Date t_START;
 	private Timestamp createDate;
+	
+	public Team(String teamname, String stadiumname, String t_area, Date t_START) {
+		this.teamname = teamname;
+		this.stadiumname = stadiumname;
+		this.t_area = t_area;
+		this.t_START = t_START;
+	}
+	
+	
 }

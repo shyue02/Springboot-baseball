@@ -6,7 +6,7 @@ import site.metacoding.red.domain.player.Player;
 
 @Setter
 @Getter
-public class RegisterDto {
+public class PlayRegisterDto {
 	private String playername;
 	private String teamname;
 	private Integer uniformnumber;
