@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class StardiumSaveForm {
+public class StardiumDto {
 	private String stadiumname;
 	private String area;
 	private Date build;

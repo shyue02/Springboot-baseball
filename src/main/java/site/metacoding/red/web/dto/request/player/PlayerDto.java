@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class PlayerSaveForm {
+public class PlayerDto {
 	private String playername;
 	private String teamname;
 	private Integer uniformnumber;

@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class TeamSaveForm {
+public class TeamDto {
 	private String teamname;
 	private String stadiumname;
 	private String t_area;

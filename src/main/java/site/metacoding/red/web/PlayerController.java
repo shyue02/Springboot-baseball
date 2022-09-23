@@ -10,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 @RestController
 public class PlayerController {
 
-	//돌아감
 	@GetMapping("/player")
 	public String player() {
 		return "<h1>player</h1>";

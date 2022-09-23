@@ -1,13 +1,13 @@
 package site.metacoding.red;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootApplication
-public class RedApplication {
+@SpringBootTest
+class RedApplicationTests {
 
-	public static void main(String[] args) {
-		SpringApplication.run(RedApplication.class, args);
+	@Test
+	void contextLoads() {
 	}
 
 }

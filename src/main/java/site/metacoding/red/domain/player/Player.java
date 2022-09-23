@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
-import site.metacoding.red.web.dto.request.player.PlayerSaveForm;
+import site.metacoding.red.web.dto.request.player.PlayerDto;
 
 @Setter
 @Getter
@@ -17,7 +17,7 @@ public class Player {
 	private Timestamp createDate;
 
 	
-	public void update(PlayerSaveForm updateDto) {
+	public void update(PlayerDto updateDto) {
 		this.playername=updateDto.getPlayername();
 		this.teamname=updateDto.getTeamname();
 		this.uniformnumber=updateDto.getUniformnumber();
