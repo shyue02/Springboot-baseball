@@ -3,9 +3,10 @@ package site.metacoding.red.domain.player;
 import java.sql.Timestamp;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import site.metacoding.red.web.dto.request.player.PlayerDto;
 
+@NoArgsConstructor
 @Setter
 @Getter
 public class Player {
@@ -15,5 +16,14 @@ public class Player {
 	private Integer uniformnumber;
 	private String POSITION;
 	private Timestamp createDate;
-		
+	
+	
+	public Player(String playername, String teamname, Integer uniformnumber, String POSITION) {
+		this.playername = playername;
+		this.teamname = teamname;
+		this.uniformnumber = uniformnumber;
+		this.POSITION = POSITION;
+	}
+	
+	
 }
