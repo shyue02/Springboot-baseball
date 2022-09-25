@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import site.metacoding.red.web.dto.request.player.PlayRegisterDto;
 
 @NoArgsConstructor
 @Setter
@@ -23,6 +24,13 @@ public class Player {
 		this.teamname = teamname;
 		this.uniformnumber = uniformnumber;
 		this.POSITION = POSITION;
+	}
+	
+	public void update(PlayRegisterDto playRegisterDto) {
+		this.playername = playRegisterDto.getPlayername();
+		this.teamname = playRegisterDto.getTeamname();
+		this.uniformnumber = playRegisterDto.getUniformnumber();
+		this.POSITION = playRegisterDto.getPOSITION();
 	}
 	
 	
